@@ -7,7 +7,12 @@ html {
   border-style: solid;
   width: 150px;
   height: 150px;
+  font-size: 80px;
 }
+
+.checkbox:hover { background-color: purple; }
+.checkbox:active { background-color: #fec02d; }
+
 
 #board {
 }
