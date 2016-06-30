@@ -1,3 +1,17 @@
 html {
-  
+
+}
+
+.checkbox {
+  border-color: black;
+  border-style: solid;
+  width: 150px;
+  height: 150px;
+}
+
+#board {
+}
+
+h1 {
+  text-align: center;
 }
