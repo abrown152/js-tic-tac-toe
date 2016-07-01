@@ -38,6 +38,12 @@ TicTacToe.hasWon = function() {
 // Functions for checking boxes
 function checkBox(id, letter) {
   document.getElementById(id).innerHTML = letter;
+  // ^^Assign the X or O as HTML text
+  var box = $(board).find(id)
+  // Assign the checkbox object to a variable so it can have a class added to it
+  box.addClass(letter)
+  // Adding the class "x" or "o" to the checkbox object so we can use that to easily track if someone has won. Not working wtf???
+  console.log(box)
 }
 
 $(document).ready( function() {
@@ -51,12 +57,14 @@ $(document).ready( function() {
       if (player === 1) {
         checkBox(this.id, "X")
         player = 2
+        // this.addClass('xclass')
         if (TicTacToe.hasWon() === true) {
           alert("We have a winner^_^")
         }
       } else {
         checkBox(this.id, "O")
         player = 1
+        // this.addClass('oclass')
         if (TicTacToe.hasWon() === true) {
           alert("We have a winner^_^")
         }
